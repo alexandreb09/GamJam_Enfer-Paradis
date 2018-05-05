@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to change Avatar"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/avImage"
+        android:layout_centerHorizontal="true"
+        android:textSize="11dp"
+        android:layout_margin="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR NAME"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fnTxt"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:hint="type your full name"
+        android:textSize="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR STATISTICS"
+        android:id="@+id/textView5"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/fnTxt"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="you've caught 0 Monsters | made 0 points"
+        android:id="@+id/yourStatsTxt"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="8dp"
+        android:layout_alignEnd="@+id/fnTxt"
+        android:layout_alignStart="@+id/textView5" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="SEE THE MONSTERS YOU'VE CAUGHT"
+        android:id="@+id/seeMonstButt"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/yourStatsTxt"
+        android:layout_centerHorizontal="true"
+        android:background="#8459ee" />
+
+
+    <!-- Tab Bar -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tab_nearby"
+            android:textAllCaps="false"
+            android:background="@drawable/tab_nearby"
+            android:layout_gravity="center_horizontal"
+            android:text="Nearby"
+            android:paddingTop="30dp"
+            android:textSize="10dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tab_topten"
+            android:textAllCaps="false"
+            android:background="@drawable/tab_topten"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:paddingTop="30dp"
+            android:text="Top 10"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/tab_account"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/tab_account"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingTop="30dp"
+            android:text="Account"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

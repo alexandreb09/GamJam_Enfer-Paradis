@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bwq="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/traceRouteButt"
+        android:icon="@drawable/traceroute_butt"
+        android:title=""
+        app:showAsAction="always"
+        bwq:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        android:orderInCategory="0"/>
+
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".Nearby">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/bkg"
+        android:scaleType="centerCrop"
+        android:alpha="0.5"
+        android:layout_above="@+id/linearLayout2" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:columnCount="3"
+        android:orientation="vertical"
+        android:id="@+id/nearbyGridView"
+        android:choiceMode="singleChoice"
+        android:numColumns="3"
+        android:layout_above="@+id/admobBanner"
+        android:layout_marginBottom="10dp">
+
+    </GridView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admobBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ADMOB_BANNER_UNIT_ID"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+
+
+    <!-- Tab Bar -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/tab_nearby"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/tab_nearby"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingTop="30dp"
+            android:text="Nearby"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="10dp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tab_topten"
+            android:textAllCaps="false"
+            android:background="@drawable/tab_topten"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:paddingTop="30dp"
+            android:text="Top 10"
+            android:textSize="10dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tab_account"
+            android:textAllCaps="false"
+            android:background="@drawable/tab_account"
+            android:layout_marginLeft="60dp"
+            android:paddingTop="30dp"
+            android:text="Account"
+            android:textSize="10dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+
+</RelativeLayout>

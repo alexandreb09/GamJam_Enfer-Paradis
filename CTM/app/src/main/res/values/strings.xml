@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CatchTheMonsters</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN BANNER UNIT ID YOU'LL GET FROM: http://apps.admob.com -->
+    <string name="ADMOB_BANNER_UNIT_ID">ca-app-pub-3120536913205473/5975042732</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN FACEBOOK APP ID YOU'LL GET ON https://developers.facebook.com/apps/ -->
+    <string name="facebook_app_id">668028110068532</string>
+
+
+</resources>

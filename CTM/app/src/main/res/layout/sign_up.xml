@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Create an account on Catch The Monsters, it's free!"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:id="@+id/usernameTxt2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:hint="type a username"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/passwordTxt2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usernameTxt2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint="type a password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/fullnameTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordTxt2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint="type your full name"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="12sp"/>
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Sign Up"
+                android:id="@+id/signUpButt2"
+                android:background="#57c4f6"
+                android:textColor="#fff"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:layout_below="@+id/fullnameTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

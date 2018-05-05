@@ -1,0 +1,12 @@
+<resources>
+
+
+    <!-- IMPORTANT: REPLACE THE KEY BELOW WITH YOUR OWN ONE, YOU CAN GET IT ON YOUR GOOGLE DEVELOPERS CONSOLE: https://developers.google.com/mobile/add?platform=android&cntapi=gcm
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve"
+        translatable="false">
+        AIzaSyDEowdN_9Bv2PGJti7cdIAZMp5hsVMmTuo
+    </string>
+
+
+</resources>

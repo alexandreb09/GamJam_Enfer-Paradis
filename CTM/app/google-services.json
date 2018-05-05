@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "478517440140",
+    "firebase_url": "https://bizzy-aa883.firebaseio.com",
+    "project_id": "bizzy-aa883",
+    "storage_bucket": "bizzy-aa883.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478517440140:android:38efd6d74f06cb83",
+        "android_client_info": {
+          "package_name": "ctm.domain.com.catchthemonsters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478517440140-si80u7ujd0sm91fpfkard5eu94q5tvjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvdfI8011kJcKMmB-VD8E-bHi8lGHa99A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "ctm.domain.com.catchthemonsters"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        // Enabling multidex support.
+        multiDexEnabled true
+
+        // For Geocoding with JSON
+        useLibrary 'org.apache.http.legacy'
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+}
+
+
+
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.squareup.okhttp3:okhttp:+'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.parse:parse-android:+'
+    implementation 'com.parse.bolts:bolts-android:1.+'
+
+    implementation 'com.google.android.gms:play-services-ads:15.0.0'
+    implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    implementation 'com.google.android.gms:play-services-location:15.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.+'
+    implementation 'com.parse:parsefacebookutils-v4-android:1.10.3@aar'
+
+    implementation 'com.google.firebase:firebase-core:15.0.0'
+    implementation 'com.google.firebase:firebase-messaging:15.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
